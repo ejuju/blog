@@ -2,11 +2,16 @@
 	import { theme, type Theme } from './theme';
 
 	export let availableThemes: Theme[];
+
+	function setTheme(t: Theme) {
+		theme.set(t);
+		localStorage.setItem('theme', JSON.stringify(t));
+	}
 </script>
 
 <section class="ThemeController">
 	{#each availableThemes as availableTheme}
-		<button on:click={() => theme.set(availableTheme)}>{availableTheme.name}</button>
+		<button on:click={() => setTheme(availableTheme)}>{availableTheme.name}</button>
 	{/each}
 </section>
 

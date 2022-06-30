@@ -4,7 +4,7 @@
     --space-side: 1rem;
     --space-page: var(--space-top) var(--space-side) var(--space-bottom);
 
-    @media (min-width: 800px) {
-        --space-side: calc(1rem + 30vw);
+    @media (min-width: 1000px) {
+        --space-side: calc(1rem + 20vw);
     }
 }

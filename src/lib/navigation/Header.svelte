@@ -3,7 +3,7 @@
 	import { sampleLinks } from './sample_links';
 	import { slide } from 'svelte/transition';
 
-	export let brandName: string = '';
+	export let blogName: string = 'ioreader';
 	export const links: Link[] = sampleLinks;
 
 	let menuIsVisible: boolean = false;
@@ -16,7 +16,7 @@
 </script>
 
 <header class="Header">
-	<a class="BrandName" href="/">{brandName}</a>
+	<a class="BlogName" href="/">{blogName}</a>
 
 	<button on:click={toggleMenuVisibility} aria-label="open menu" class:isCross={menuIsVisible}>
 		<div />
@@ -41,7 +41,7 @@
 		padding: 0 var(--space-side);
 		border-bottom: var(--border);
 
-		.BrandName {
+		.BlogName {
 			padding: 1rem 0;
 			font-weight: 600;
 			margin-right: auto;

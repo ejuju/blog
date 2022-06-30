@@ -7,9 +7,12 @@
 
 # V0
 - [x] Dark theme
+- [x] Set light theme during day hours
 - [ ] Home page with top posts
 - [ ] Tag page
 - [ ] Markdown integration
+- [ ] New post workflow POC
+- [ ] Add favicon
 
 # V1
 - [ ] Comments

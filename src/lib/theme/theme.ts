@@ -17,10 +17,26 @@ export const availableThemes: Theme[] = [
     lightTheme,
 ]
 
+function getInitialTheme(): Theme {
+    if (!browser) return darkTheme
+
+    // check local storage
+    const storedTheme = localStorage.getItem("theme")
+    if (storedTheme !== null) {
+        return JSON.parse(storedTheme)
+    }
+
+    // return light theme if current time is day time
+    const currHourOfTheDay = new Date().getHours()
+    return (currHourOfTheDay > 7 && currHourOfTheDay < 19) ? lightTheme : darkTheme
+}
+
 // globally accessible state
-export const theme: Writable<Theme> = writable(darkTheme);
+export const theme: Writable<Theme> = writable(getInitialTheme());
 
 // update body class name when theme is updated
 theme.subscribe((curr) => {
-    if (browser) document.body.className = curr?.bodyCssClass
+    if (!browser) return
+
+    document.body.className = curr?.bodyCssClass
 })
