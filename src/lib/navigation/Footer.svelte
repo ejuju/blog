@@ -13,8 +13,8 @@
 
 	<section class="Social">
 		<span>External links</span>
-		<a href="github.com/ejuju">Github</a>
-		<a href="croissant.studio">Website</a>
+		<a href="https://github.com/ejuju" target="_blank">Github</a>
+		<a href="https://croissant.studio" target="_blank">Website</a>
 	</section>
 </footer>
 

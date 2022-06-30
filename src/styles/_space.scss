@@ -1,10 +1,10 @@
 :root {
-    --space-top: 2rem;
+    --space-top: 3rem;
     --space-bottom: 4rem;
     --space-side: 1rem;
     --space-page: var(--space-top) var(--space-side) var(--space-bottom);
 
     @media (min-width: 800px) {
-        --space-side: calc(1rem + 20vw);
+        --space-side: calc(1rem + 30vw);
     }
 }

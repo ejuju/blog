@@ -5,10 +5,12 @@
 	export let title: string;
 	export let shortDescription: string;
 	export let tags: string[];
+	export let date: Date;
 </script>
 
 <section class="PostPreview">
 	<h2>{title}</h2>
+	<span>Last update: {date.toLocaleDateString()}</span>
 	<p>{shortDescription}</p>
 	<nav>
 		{#each tags as tag}
