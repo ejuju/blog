@@ -14,7 +14,7 @@
 			<Tag slug={tag} />
 		{/each}
 	</nav>
-	<a href={post.slug} class="btn">Read full post</a>
+	<a href="/post/{post.slug}" class="btn">Read full post</a>
 </section>
 
 <style lang="scss">

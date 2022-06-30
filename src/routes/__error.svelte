@@ -10,7 +10,7 @@
 </script>
 
 <script lang="ts">
-	export let title: string;
+	export let title: string = '';
 </script>
 
 <div class="Page">

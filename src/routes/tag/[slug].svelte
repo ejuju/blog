@@ -13,7 +13,7 @@
 
 	<section class="Posts">
 		{#each posts as post}
-			<PostPreview {...post} />
+			<PostPreview {post} />
 		{:else}
 			<p>No post found for this tag</p>
 		{/each}

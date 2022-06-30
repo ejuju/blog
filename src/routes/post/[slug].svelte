@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Post } from '$lib/blog/post';
-	export let post: Post;
+	import { samplePosts } from '$lib/blog/sample_posts';
+	export let post: Post = samplePosts[0];
 </script>
 
 <section class="Page">
