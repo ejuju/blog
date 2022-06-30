@@ -22,7 +22,7 @@
 
 	<section class="TopPosts">
 		{#each topPosts as post}
-			<PostPreview {...post} />
+			<PostPreview {post} />
 		{/each}
 	</section>
 </div>
