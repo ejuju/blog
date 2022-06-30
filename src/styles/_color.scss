@@ -1,0 +1,22 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-white-1: hsl(0, 0%, 94%);
+    --clr-black: hsl(0, 0%, 10%);
+    --clr-black-1: hsl(0, 0%, 14%);
+}
+
+body {
+    &.light {
+        --clr-txt: var(--clr-black);
+        --clr-txt-1: var(--clr-black-1);
+        --clr-bg: var(--clr-white);
+        --clr-bg-1: var(--clr-white-1);
+    }
+
+    &.dark {
+        --clr-txt: var(--clr-white);
+        --clr-txt-1: var(--clr-white-1);
+        --clr-bg: var(--clr-black);
+        --clr-bg-1: var(--clr-black-1);
+    }
+}

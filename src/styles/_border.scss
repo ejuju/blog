@@ -1,0 +1,8 @@
+:root {
+    --border-width: 1px;
+    --border-style: solid;
+    --border-color: currentColor;
+    --border: var(--border-style) var(--border-width) var(--border-color);
+
+    --border-radius: 2rem;
+}
